@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.outer-box {
+    margin: 0 auto;
+    border: 2px solid white;
+    background-color: grey;
+    border-radius: 100px;
+    height: 200px;
+    width: 400px;
+}
+.inner-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    height: 76%;
+    width: 83%;
+    border-radius: 75px;
+}
+.slider {
+    height: 100%;
+    width: 46%;
+    background-color: darkgray;
+    position: relative;
+    border-radius: 75px;
+    transition: all 0.5s ease-in-out;
+}
+.slider.move {
+    transform: translateX(120%);
+    background-color: greenyellow;
+}
